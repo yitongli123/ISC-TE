@@ -39,7 +39,6 @@ class Evaluator(object):
         for idx, target_label in enumerate(range(1, target.max() + 1)):
             if np.sum(target == target_label) < 20:
                 target[target == target_label] = 0
-                # seek pred label correspond to the label of target
             correspond_labels = pred[target == target_label]
             correspond_labels = correspond_labels[correspond_labels != 0]
             unique, counts = np.unique(correspond_labels, return_counts=True)

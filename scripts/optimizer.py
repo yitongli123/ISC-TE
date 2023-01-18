@@ -3,7 +3,6 @@ import torch
 from torch.optim.optimizer import Optimizer, required
 
 
-# https://github.com/LiyuanLucasLiu/RAdam/blob/master/radam/radam.py
 class RAdam(Optimizer):
 
     def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), eps=1e-8, weight_decay=0, degenerated_to_sgd=True):
@@ -72,7 +71,6 @@ class RAdam(Optimizer):
                     N_sma = N_sma_max - 2 * state['step'] * beta2_t / (1 - beta2_t)
                     buffered[1] = N_sma
 
-                    # more conservative since it's an approximated value
                     if N_sma >= 5:
                         step_size = math.sqrt(
                             (1 - beta2_t) * (N_sma - 4) / (N_sma_max - 4) * (N_sma - 2) / N_sma * N_sma_max / (
@@ -83,7 +81,6 @@ class RAdam(Optimizer):
                         step_size = -1
                     buffered[2] = step_size
 
-                # more conservative since it's an approximated value
                 if N_sma >= 5:
                     if group['weight_decay'] != 0:
                         p_data_fp32.add_(-group['weight_decay'] * group['lr'], p_data_fp32)

@@ -13,7 +13,7 @@ python Inference.py --config_path config/model.json
 
 # Train + Test
 '''
-sh sun.sh
+sh run.sh
 '''
 
 # Hyper-parameter setting

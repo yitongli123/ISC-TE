@@ -3,7 +3,6 @@ import numpy as np
 warnings.filterwarnings("ignore")
 
 
-# Loss Meter
 class AverageMeter(object):
     """Computes and stores the average and current value"""
     def __init__(self):
@@ -22,8 +21,6 @@ class AverageMeter(object):
         self.avg = self.sum / self.count
 
 
-# Dice Score for binary segmentation
-# https://www.kaggle.com/iezepov/fast-iou-scoring-metric-in-pytorch-and-numpy
 class Evaluator(object):
     def __init__(self, target_class=1):
         self.IoU = 0

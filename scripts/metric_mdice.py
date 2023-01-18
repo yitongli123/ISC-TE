@@ -6,7 +6,7 @@ import skimage.morphology as morphology
 from scipy.ndimage.morphology import binary_fill_holes
 warnings.filterwarnings("ignore")
 
-# Dice Score & IoU for binary segmentation
+
 class Evaluator(object):
     def __init__(self):
         self.Dice = 0
@@ -27,7 +27,7 @@ class Evaluator(object):
         IoU = Dice / (2. - Dice)
         return Dice, IoU
 
-    # https://github.com/naivete5656/WSISPDR/blob/master/utils/for_review.py
+
     def mdice_fn(self, target, pred):
         '''
         :param target: hxw label
@@ -60,7 +60,6 @@ class Evaluator(object):
                     target[target == x] = 0
                 pred_mask = np.zeros(pred.shape)
 
-            # create mask
             target_mask = np.zeros(target.shape)
             target_mask[target == target_label] = 1
             pred_mask = pred_mask.flatten()

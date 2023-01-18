@@ -1,0 +1,37 @@
+{
+    "TRAIN": {
+        "seed" : 42,
+        "device" : "cuda:0",
+        "data_dir" : "./example_re/images/airplane/",
+        "scr_dir" : "./example_re/labels/airplane/",
+        "mask_dir" : "./example_re/labels/airplane/",
+        "df_path" : "./example_re/labels/airplane/train.csv",
+        "log_dir" : "./logs/",
+        "fold" : 0,
+        "n_epochs" : 1000,
+        "input_size" : 256,
+        "batch_size" : 16,
+        "lr" : 3e-4,
+        "weight_decay" : 5e-5,
+        "num_workers" : 8,
+        "ignore_index" : 250,
+        "thr_epoch" : 500,
+        "period_epoch" : 5,
+        "thr_conf" : 0.8,
+        "alpha" : 0.2,
+        "num" : 0.3,
+        "degree" : 0.7
+    },
+    "TEST": {
+        "seed" : 42,
+        "device" : "cpu",
+        "save_result" : "True",
+        "data_dir" : "./example_re/test/airplane/",
+        "mask_dir" : "./example_re/GT",
+        "df_path" : "./example_re/labels/airplane/test.csv",
+        "model_path" : "./logs/best_model.pth",
+        "input_size" : 256,
+        "batch_size" : 1,
+        "num_workers" : 8
+    }
+}

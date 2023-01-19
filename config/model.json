@@ -27,7 +27,7 @@
         "device" : "cpu",
         "save_result" : "True",
         "data_dir" : "./examples/test/airplane/",
-        "mask_dir" : "./examples/GT",
+        "mask_dir" : "./examples/GT/airplane/",
         "df_path" : "./examples/labels/airplane/test.csv",
         "model_path" : "./logs/best_model.pth",
         "input_size" : 256,

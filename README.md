@@ -36,31 +36,31 @@ partly shown below, proving the effectiveness of our setting in the paper.
             Input image
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/input.png)
 
-"num":0.1, "degree":0.7
+            "num":0.1, "degree":0.7
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0107.png)
 
-"num":0.3, "degree":0.7
+            "num":0.3, "degree":0.7
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0307.png)
 
-"num":0.5, "degree":0.7
+            "num":0.5, "degree":0.7
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0507.png)
 
-"num":0.7, "degree":0.7
+            "num":0.7, "degree":0.7
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0707.png)
 
-"num":0.9, "degree":0.7
+            "num":0.9, "degree":0.7
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0907.png)
 
-"num":0.3, "degree":0.1
+            "num":0.3, "degree":0.1
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0301.png)
 
-"num":0.3, "degree":0.3
+            "num":0.3, "degree":0.3
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0303.png)
 
-"num":0.3, "degree":0.5
+            "num":0.3, "degree":0.5
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0305.png)
 
-"num":0.3, "degree":0.9
+            "num":0.3, "degree":0.9
 ![image](https://github.com/yitongli123/ISC-TE/blob/main/images/0309.png)
 
 

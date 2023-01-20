@@ -16,17 +16,23 @@ are used for validation, which need to be manually created. The airplane data us
 satellite images from Google, and the airplanes and background are annotated sparsely in our scribbles.
 
 # Train
-'''
+(1) Modify the paths in "TRAIN" of model.json ("config/model.json").
+
+(2) '''
 python Train.py --config_path config/model.json
 '''
 
 # Test
-'''
+(1) Modify the paths in "TEST" of model.json ("config/model.json").
+
+(2) '''
 python Inference.py --config_path config/model.json
 '''
 
 # Train + Test
-'''
+(1) Modify the paths in model.json ("config/model.json").
+
+(2) '''
 sh run.sh
 '''
 

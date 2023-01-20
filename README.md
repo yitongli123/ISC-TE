@@ -13,7 +13,7 @@ which target region, background and unknown area are correspondingly annotated b
 and 250 are generated and stored in 'examples/labels/{image_type}/'. To apply other datasets, you can modify
 "preprocess_dataset.sh" and "preprocess.py". In testing, fully-annotated labels in 'examples/GT/{image_type}/' 
 are used for validation, which need to be manually created. The airplane data used in the paper are airport 
-satellite images from Google, and the target and background are labeled by straight lines in our scribbles.
+satellite images from Google, and the airplanes and background are annotated sparsely in our scribbles.
 
 # Train
 '''

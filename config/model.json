@@ -26,7 +26,7 @@
         "seed" : 42,
         "device" : "cpu",
         "save_result" : "True",
-        "data_dir" : "./examples/test/airplane/",
+        "data_dir" : "./examples/images/airplane/",
         "mask_dir" : "./examples/GT/airplane/",
         "df_path" : "./examples/labels/airplane/test.csv",
         "model_path" : "./logs/best_model.pth",

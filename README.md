@@ -7,11 +7,12 @@ sh preprocess_dataset.sh
 '''
 
 Note: After running the above code, you will get a directory named "examples" where input images are stored 
-in 'examples/images/{image_type}/' and 'examples/test/{image_type}/' for trainning and testing respectively.
-Besides, scribble labels in which target region, background and unknown area are correspondingly annotated by 
-pixels with values of 1, 0 and 250 are generated and stored in 'examples/labels/{image_type}/'. To apply other 
-datasets, you can modify "preprocess_dataset.sh" and "preprocess.py". In testing, fully-annotated labels in
-'examples/GT/{image_type}/' are used for validation, which need to be manually created.
+in 'examples/images/{image_type}/' and then loaded according to 'examples/labels/{image_type}/train.csv' and
+'examples/labels/{image_type}/test.csv' for trainning and testing respectively. Besides, scribble labels in 
+which target region, background and unknown area are correspondingly annotated by pixels with values of 1, 0
+and 250 are generated and stored in 'examples/labels/{image_type}/'. To apply other datasets, you can modify
+"preprocess_dataset.sh" and "preprocess.py". In testing, fully-annotated labels in'examples/GT/{image_type}/'
+are used for validation, which need to be manually created.
 
 # Train
 '''
